@@ -10,7 +10,17 @@ Related issues: [#405](https://github.com/Lightning-AI/LitServe/issues/405), [#3
 
 ## Installation
 
+Install directly from GitHub:
+
 ```bash
+pip install git+https://github.com/dacrystal/litserve-tasks
+```
+
+Or clone and install in editable mode:
+
+```bash
+git clone https://github.com/dacrystal/litserve-tasks
+cd litserve-tasks
 pip install -e .
 ```
 
