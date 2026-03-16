@@ -2,7 +2,7 @@
 
 Async task processing for [LitServe](https://github.com/Lightning-AI/LitServe) via `TaskSpec` — a `LitSpec` subclass.
 
-Clients submit long-running inference jobs and receive a `task_id` immediately, then poll for status and fetch the result when ready. Designed to mirror LitServe's internal layout for easy future integration as a PR.
+Clients submit long-running inference jobs and receive a `task_id` immediately, then poll for status and fetch the result when ready.
 
 Related issues: [#405](https://github.com/Lightning-AI/LitServe/issues/405), [#348](https://github.com/Lightning-AI/LitServe/issues/348)
 
