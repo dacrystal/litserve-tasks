@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "litserve-tasks"
+version = "0.1.0"
+description = "Async task processing spec for LitServe"
+requires-python = ">=3.10"
+dependencies = ["litserve"]
+authors = [ {name = "Nasser Alansari", email = "dacrystal@users.noreply.github.com"}]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+    "asgi-lifespan",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/litserve_tasks"]
